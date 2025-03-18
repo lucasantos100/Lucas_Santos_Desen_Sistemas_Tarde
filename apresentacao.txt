@@ -1,0 +1,9 @@
+Idade: 17
+
+Conhecimento: Tenho conhecimento em HTML, CSS , JAVASCRIPT (beginner), PYTHON e DJANGO.
+
+Mora com: Irmão, Mãe, Padrasto
+
+Gosto de: Aprender coisas novas, jogar, vôlei, minha namorada
+
+Trabalho: Não trabalho no momento mas adoraria trabalhar em algo relacionado ao web designer ou banco de dados.
