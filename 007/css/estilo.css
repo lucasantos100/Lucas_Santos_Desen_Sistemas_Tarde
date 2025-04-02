@@ -1,0 +1,14 @@
+p{
+    color:black;
+    background-color: pink;
+    text-align: center;
+    font-family:'arial narrow';
+    font-size: 15pt; 
+    font-weight: bold;
+}
+h1{
+    background-color: pink;
+    text-align: center; 
+    color:black;
+    border-radius: 10px;
+}
