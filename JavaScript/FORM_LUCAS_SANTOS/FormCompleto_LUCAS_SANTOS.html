@@ -1,0 +1,222 @@
+  <!--**********************************-->
+   <!--        FORMULARIO COMPLETO                 -->
+    <!--                                                           -->
+    <!--*********************************-->
+   <!DOCTYPE html>
+   <html lang="pt-BR">
+   <head>
+   <meta charset="UTF-8"/>
+   <title> Formulário </title>
+   <meta name="description" content="Aprenda a criar um site completo que 
+   usa formulários em HTML">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <link rel="icon" href="img/card.png" type="image/x-icon">
+   <link rel="stylesheet" href="css/FormCompleto.css">
+   <script src="js/FormCompleto.js"></script>
+   </head>
+   <body>
+    <h1 class="display-4">Lucas Vinicius Dos Santos</h1>
+    <h2> Preencha o formulário abaixo para participar do curso de HTML & 
+  CSS completo, Senai - Téc Desenv Sistemas</h2><br />
+   <form action="Script_do_Formulario.php" method="post" style="margin-bottom: 30px;">
+
+    
+   <!-- DADOS PESSOAIS-->
+   
+   <fieldset>
+   <legend>Dados Pessoais</legend>
+   <table cellspacing="10" border="0" >
+    <tr>
+    <td>
+    <label for="nome">Nome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="email" placeholder="Insira Seu Nome" onkeypress="mascara(this,removeDigitos)" required>
+    </td>
+    <td>
+    <label for="sobrenome">Sobrenome: </label>
+    </td>
+    <td align="left">
+    <input type="text" name="sobrenome" placeholder="Insira Seu Sobrenome" onkeypress="mascara(this,removeDigitos)" required>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label>Nascimento: </label>
+    </td>
+    <td align="center">
+    <input type="date" name="dia" size="2" maxlength="2" placeholder="dd" required>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="rg">RG: </label>
+    </td>
+    <td align="left">
+    <input type="text" size="13" maxlength="9" placeholder="Insira Seu RG" onkeypress="mascara(this,RG)" required>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="cpf">CPF:</label>
+    </td>
+    <td align="left">
+    <input type="text" size="9" maxlength="14" placeholder="Insira Seu CPF" onkeypress="mascara(this,CPF)" required>
+     </td>
+     </tr>
+  </table>
+   </fieldset>
+   <br />
+   
+   <!-- ENDEREÇO -->
+   
+   <fieldset>
+   <legend>Dados de Endereço</legend>
+   <table cellspacing="20">
+    <tr>
+    <td>
+    <label for="rua" >Rua:</label>
+    </td>
+    <td align="left">
+    <input type="text" name="rua" placeholder="Insira Sua Rua" required>
+    </td>
+    <td>
+    <label for="numero" >Número:</label>
+    </td>
+    <td align="left">
+    <input type="text" size="4" placeholder="Insira o Número da Sua Rua" onkeypress="mascara(this,removeLetras)" required>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="bairro">Bairro: </label>
+    </td>
+    <td align="left">
+    <input type="text" name="bairro" placeholder="Insira o Seu Bairro" required>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="estado">Estado:</label>
+    </td>
+    <td align="left">
+    <select name="estado">
+    <option value="ac">Acre</option>
+    <option value="al">Alagoas</option>
+    <option value="am">Amazonas</option>
+    <option value="ap">Amapá</option>
+    <option value="ba">Bahia</option>
+    <option value="ce">Ceará</option>
+    <option value="df">Distrito Federal</option>
+    <option value="es">Espírito Santo</option>
+    <option value="go">Goiás</option>
+    <option value="ma">Maranhão</option>
+    <option value="mt">Mato Grosso</option>
+    <option value="ms">Mato Grosso do Sul</option>
+    <option value="mg">Minas Gerais</option>
+    <option value="pa">Pará</option>
+    <option value="pb">Paraíba</option>
+    <option value="pr">Paraná</option>
+    <option value="pe">Pernambuco</option>
+    </select>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="cidade">Cidade: </label>
+    </td>
+    <td align="left">
+   <input type="text" name="cidade" placeholder="Insira Sua Cidade" onkeypress="mascara(this,removeDigitos)" required>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="cep">CEP: </label>
+    </td>
+    <td align="left">
+    <input type="text" size="5" maxlength="8" placeholder="Insira Seu CEP" onkeypress="mascara(this,cep)" required>
+    </td>
+    </tr>
+   </table>
+   </fieldset>
+   <br />
+   
+   <!-- DADOS DE LOGIN -->
+  
+  <fieldset>
+   <legend>Dados de Login</legend>
+   <table cellspacing="15">
+
+    <tr>
+    <td>
+    <label for="email">E-mail: </label>
+    </td>
+    <td align="left">
+    <input type="email" placeholder="Insira Seu E-Mail" required>
+    </td>
+    </tr>
+    <td>
+      <td>
+        <td>
+        </td>
+      </td>
+    </td>
+    <tr>
+      <!-- TELEFONE -->
+          <td>
+              <label for="telefone">Telefone: </label>
+          </td>
+          <td align="left">  
+              <input type="text" required onkeypress="mascara(this,telefone)" maxlength="15" placeholder="Insira Seu Telefone"></label>
+          </td>
+          <td>
+          </td>
+  </tr>
+
+    <tr>
+    <td>
+    <label for="login">Login de usuário: </label>
+    </td>
+    <td align="left">
+    <input type="text" name="login" placeholder="Insira Seu Login" required>
+    </td>
+    </tr>
+    
+
+
+    <tr>
+    <td>
+    <label for="pass">Senha: </label>
+    </td>
+    <td align="left">
+    <input type="password" name="pass" required>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    <label for="passconfirm">Confirme a senha: </label>
+    </td>
+    <td align="left">
+    <input type="password" name="passconfirm" required>
+    </td>
+    </tr>
+
+    <tr>
+    <td>
+    <label for="imagem">Imagem de perfil:</label>
+    </td>
+    <td>
+    <input type="file" name="imagem" required>
+    </td>
+    </tr>
+   </table>
+   </fieldset>
+   <hr>
+   <br />
+   <div>
+   <input type="submit" >
+   <input type="reset" value="Limpar">
+   </div>
+   </form>
+   </body>
+   </html>
